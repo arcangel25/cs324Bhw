@@ -1,0 +1,164 @@
+/*Author: Sophie Arcangel*/
+
+/*Changes background and overall font*/
+body {
+  background-color: rgb(238, 210, 204);
+  font-family: Verdana, sans-serif;
+  background-image: url("https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2020%2F03%2Fbest-cheesecake-restaurants-bakery-new-york-city-magnolia-juniors-eileens-special-0.jpg?w=960&cbr=1&q=90&fit=max");
+  background-size: cover;
+}
+
+/*Aligns and centers, header, gives semi-transparent background for title*/
+h1 {
+  color: rgb(161, 104, 58);
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 75px;
+  margin-bottom: 1%;
+  background-color: rgb(238, 210, 204, .5);
+  margin-top: 0%;
+}
+
+/*Relates specifically to the Quantity, Topping, Image, and Special Notes box
+    Centers these things, changes text color, background, and width they take up*/
+.order {
+  background-color: rgb(251, 247, 244);
+  text-align: center;
+  padding: 25px;
+  width: 33%;
+  margin: auto;
+  color: rgb(161, 104, 58);
+}
+
+
+/*Defines space for previous order section, changes color scheme*/
+.prevOrders {
+  background-color: rgb(108, 154, 139);
+  color: rgb(251, 247, 244);
+  padding: 15px 15px;
+  bottom: 10;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 25%;
+}
+
+/*Aligns and centers, inline-block allows the quantity and topping selection to be side by side image*/
+#table {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 15px 15px;
+  color: rgb(161, 104, 58);
+  text-align: left;
+  display: inline-block;
+  border-spacing: 15px;
+}
+
+/*Stylizes button and enables hover function*/
+.button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(232, 153, 141);
+  color: rgb(251, 247, 244);
+  border-radius: 12px;
+  padding: 15px 45px;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background-color: rgb(161, 104, 58);
+  color: rgb(251, 247, 244);
+}
+
+/*Provides spacing for special notes section*/
+#specialNotes {
+  margin: 15px 15px 0px 15px;
+}
+
+/*Allows image, quantity, and topping selection to be side by side*/
+.sideByside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Aligns prev order list*/
+#orderList {
+  text-align: left;
+  display: inline-block;
+  margin-top: 1%;
+}
+
+/*Message that appears upon pressing*/
+.message {
+  background-color: rgb(251, 247, 244);
+  text-align: center;
+  padding: 25px;
+  width: 33%;
+  margin: auto;
+  color: rgb(161, 104, 58);
+}
+
+#orderHeader{
+  align-self: center;
+}
+
+/*The following code was sourced from a W3 Schools tutorial.
+  https://www.w3schools.com/howto/howto_css_dropdown.asp
+  The link to the code is above.
+  I edited for formatting and design choices,
+  but the functionality is largely unchanged.*/
+  
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(232, 153, 141);
+  color: white;
+  padding: 16px;
+  border: none;
+  align-self: center;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size:large;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 69px;
+  overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(161, 104, 58);
+}
