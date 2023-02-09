@@ -1,3 +1,5 @@
+//Sophie Arcangel
+
 $(document).ready(function(){
 	//hides the message that will be displayed upon pressing order
 	$(".message").hide();

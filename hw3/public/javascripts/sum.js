@@ -1,3 +1,5 @@
+//Sophie Arcangel
+
 function sum(a, b) {
 	return a + b;
 	}
