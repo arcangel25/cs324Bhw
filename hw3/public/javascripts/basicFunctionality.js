@@ -1,10 +1,11 @@
 $(document).ready(function(){
 	//hides the message that will be displayed upon pressing order
 	$(".message").hide();
+	
 	//listens for a click on the order button
 	//if 'vegan' is found in text box, an alert will display
-		$(".button").click(function(){
-		var text = $("#textField").val();
+	vegan = function(){
+	var text = $("#textField").val();
 		if(text.includes("vegan")){
 		  alert("Cheesecake contains dairy.");
 		}else{
@@ -16,11 +17,15 @@ $(document).ready(function(){
 		$("#details").text("Flavor: " + flavor + "  | Quantity: " + quant + " | Notes: " + text);
 		$(".message").show();
 	  }
-	});
+  }
+	$(".button").click(vegan);
+
 	//Determines which div in the drop down menu was clicked
 	//changes the label accordingly
-	$('div.drop').click(function() {
-	  var month = $(this).text();
-	  $(".dropbtn").text(month);
-  });
-  });
+	dropdown = function(){
+		var month = $(this).text();
+		$(".dropbtn").text(month);
+  	}
+	$("div.drop").click(dropdown);
+
+});
