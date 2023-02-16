@@ -27,6 +27,9 @@ $(document).ready(function(){
 	dropdown = function(){
 		var month = $(this).text();
 		$(".dropbtn").text(month);
+		$.post('/orders',function(data){
+			$("#lastMonthOrders").text(data);
+		});
   	}
 	$("div.drop").click(dropdown);
 
