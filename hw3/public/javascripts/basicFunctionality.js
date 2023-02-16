@@ -27,7 +27,9 @@ $(document).ready(function(){
 	dropdown = function(){
 		var month = $(this).text();
 		$(".dropbtn").text(month);
+		//get data from orders.js
 		$.post('/orders',function(data){
+			//access individual objects from the array for each val
 			$("#cherry").text(data.data[0].quantity + " " + data.data[0].topping);
 			$("#choc").text(data.data[1].quantity + " " + data.data[1].topping);
 			$("#plain").text(data.data[2].quantity + " " + data.data[2].topping);
