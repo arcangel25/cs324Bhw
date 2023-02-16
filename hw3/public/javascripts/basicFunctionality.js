@@ -28,9 +28,10 @@ $(document).ready(function(){
 		var month = $(this).text();
 		$(".dropbtn").text(month);
 		$.post('/orders',function(data){
-			$("#lastMonthOrders").text(data);
-		});
+			$("#cherry").text(data.data[0].quantity + " " + data.data[0].topping);
+			$("#choc").text(data.data[1].quantity + " " + data.data[1].topping);
+			$("#plain").text(data.data[2].quantity + " " + data.data[2].topping);
+		}, "json");
   	}
 	$("div.drop").click(dropdown);
-
 });
