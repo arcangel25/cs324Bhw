@@ -9,7 +9,6 @@ const myArray = {"data":[
 	{"topping":"plain", "quantity":3}
 ]};
 
-
 /* POST orders */
 router.post('/', function(req, res, next) {
 	res.send(JSON.stringify(myArray));
